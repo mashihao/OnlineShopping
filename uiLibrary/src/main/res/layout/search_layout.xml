@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/backgourd_layout_dark_color">
+        <FrameLayout
+            android:id="@+id/rlback"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_back"
+                android:layout_gravity="center_vertical"/>
+        </FrameLayout>
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rlback"-->
+            <!--android:layout_width="wrap_contentdp"-->
+            <!--android:layout_height="match_parent"-->
+            <!-->-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/ivBack"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="10dp"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:scaleType="centerInside"-->
+                <!--android:src="@mipmap/ic_back" />-->
+
+        <!--</RelativeLayout>-->
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/rlback"
+            android:layout_toLeftOf="@+id/lineLaySearch"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginRight="10dp">
+
+            <com.jsyh.shopping.uilibrary.ClearEditText
+                android:id="@+id/cetSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableLeft="@mipmap/search_icon"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:background="@drawable/category_circular_shap"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineLaySearch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tvSearAction"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="搜索"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@drawable/line"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ViewStub
+            android:id="@+id/vsHotsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/search_flow_tab_layout"/>
+
+
+        <ViewStub
+            android:id="@+id/vsHistoryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/search_history_layout"/>
+
+
+        <ViewStub
+            android:id="@+id/vsAutoCompleteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/search_autocomplete_layout"/>
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

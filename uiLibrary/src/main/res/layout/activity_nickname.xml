@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/center_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:padding="15dp"
+        android:background="@color/white">
+        <com.jsyh.shopping.uilibrary.ClearEditText
+            android:id="@+id/txtNickname"
+            style="@style/register_edit_style"
+            android:hint="请输入昵称" />
+        <!--<TextView-->
+            <!--android:id="@+id/txtNickname"-->
+            <!--android:layout_toLeftOf="@+id/rlClear"-->
+            <!--style="@style/register_edit_style"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:hint="请输入昵称"-->
+            <!--/>-->
+        <!--<RelativeLayout-->
+            <!--android:id="@+id/rlClear"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:padding="10dp">-->
+            <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@mipmap/ic_clear_default_normal"/>-->
+        <!--</RelativeLayout>-->
+    </RelativeLayout>
+</LinearLayout>

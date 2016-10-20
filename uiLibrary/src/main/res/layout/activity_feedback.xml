@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/center_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#999999"/>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:padding="10dp"
+        android:background="@drawable/login_bg">
+        <EditText
+            android:id="@+id/editContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="top"
+            android:lines="5"
+            android:inputType="textMultiLine"
+            android:hint="请留下您宝贵的意见吧！"
+            android:textSize="16dp"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btnSure"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:background="@drawable/login_off_bg"
+        android:textColor="#999999"
+        android:text="提交"
+        android:textSize="@dimen/activity_horizontal_margin" />
+
+</LinearLayout>

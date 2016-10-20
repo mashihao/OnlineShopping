@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/lineLay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtFriend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bottom_bg"
+            android:drawablePadding="5dp"
+            android:textSize="14dp"
+            android:drawableTop="@mipmap/friend_icon"
+            android:text="分享给好友"/>
+        <TextView
+            android:id="@+id/txtQRCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/bottom_bg"
+            android:drawableTop="@mipmap/code_icon"
+            android:drawablePadding="5dp"
+            android:textSize="14dp"
+            android:text="二维码"/>
+    </LinearLayout>
+</RelativeLayout>
